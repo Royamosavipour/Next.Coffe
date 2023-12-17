@@ -7,7 +7,7 @@ import * as Icons from "@fortawesome/free-solid-svg-icons"
 
 
 export default function ServiseItem({ img, title, desc, icon }) {
-console.log(Icons)
+
 
   return (
     <div class="col-lg-6 mb-5">
