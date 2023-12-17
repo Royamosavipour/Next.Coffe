@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from "../components/Templates/Index/Slider";
+import Slider from '@/components/Templates/Index/Slider'
 import About from "@/components/Templates/Index/About";
 import Servises from "@/components/Templates/Index/Servises";
 import Offer from "@/components/Templates/Index/Offer";
@@ -9,7 +9,8 @@ import Testimonial from "@/components/Templates/Index/Testimonials";
 export default function Index({ data }) {
   return (
     <>
-      <Slider />
+
+      <Slider/>
       <About />
       <Servises services={data.services} />
       <Offer />

@@ -1,7 +1,21 @@
-import React from 'react'
+import React from "react";
+import PageHeader from "@/components/Modules/PageHeader/PageHeader";
+import ServicesDetails from "@/components/Templates/Services/ServicesDetails";
 
-export default function Services() {
+export default function Services({ services }) {
   return (
-    <h1>Services</h1>
-  )
+    <>
+      <PageHeader route="services" />
+      <ServicesDetails services={services} />
+    </>
+  );
+}
+
+export async function getStaticProps() {
+  const responseServices = await fetch(`http://localhost:4000/services`);
+  const data = await responseServices.json();
+
+  return {
+    props: {services:data },
+  };
 }

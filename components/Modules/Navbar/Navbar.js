@@ -26,19 +26,18 @@ export default function Navbar() {
           id="navbarCollapse"
         >
           <div className={`${styles.navbar_nav} ml-auto p-4`}>
-            <a
-              href="index.html"
-              className={`${styles.nav_link} ${styles.active_nav_link}`}
-            >
-              Home
-            </a>
+          
+            <Link href="/" className={`${styles.nav_link} ${styles.active_nav_link}`}>
+            Home
+            </Link>
             <Link href="/about" className={`${styles.nav_link}`}>
               About
             </Link>
 
-            <a href="service.html" className={`${styles.nav_link}`}>
-              Service
-            </a>
+            <Link href="/services" className={`${styles.nav_link}`}>
+            Service
+            </Link>
+            
             <a href="menu.html" className={`${styles.nav_link}`}>
               Menu
             </a>
