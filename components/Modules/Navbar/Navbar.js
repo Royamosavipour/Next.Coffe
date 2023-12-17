@@ -32,7 +32,7 @@ export default function Navbar() {
             >
               Home
             </a>
-            <Link href="/about" classNameName={`${styles.nav_link}`}>
+            <Link href="/about" className={`${styles.nav_link}`}>
               About
             </Link>
 
