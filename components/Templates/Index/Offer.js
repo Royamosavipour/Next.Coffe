@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import swal from "sweetalert";
 
 export default function Offer() {
   const [email, setEmail] = useState("");
@@ -11,7 +12,11 @@ export default function Offer() {
       body: JSON.stringify({ email }),
     });
     if (responses.status === 201) {
-      alert("Email succesfully rejester");
+      swal({
+        title: "Email succesfully rejester",
+        icon: "success",
+      });
+
       setEmail("");
     }
 

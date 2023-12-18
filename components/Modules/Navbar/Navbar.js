@@ -37,10 +37,10 @@ export default function Navbar() {
             <Link href="/services" className={`${styles.nav_link}`}>
             Service
             </Link>
+            <Link href="/menu" className={`${styles.nav_link}`}>
+            Menu
+            </Link>
             
-            <a href="menu.html" className={`${styles.nav_link}`}>
-              Menu
-            </a>
             <div className={`${styles.dropdown}`}>
               <a
                 href="#"

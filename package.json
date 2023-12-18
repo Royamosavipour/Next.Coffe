@@ -17,6 +17,8 @@
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.10.1",
     "swiper": "^11.0.5"
   }
 }
