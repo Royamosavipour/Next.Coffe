@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 export default function PageHeader({ route }) {
-  console.log(route)
+  console.log(route);
   return (
     <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
       <div
@@ -19,7 +19,9 @@ export default function PageHeader({ route }) {
             </Link>
           </p>
           <p class="m-0 text-white px-2">/</p>
-          <p class="m-0 text-white">{route}</p>
+          <p class="m-0 text-white">
+            <Link href={`${route}`}>{route}</Link>
+          </p>
         </div>
       </div>
     </div>

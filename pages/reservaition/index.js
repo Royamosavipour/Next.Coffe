@@ -1,7 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageHeader from "@/components/Modules/PageHeader/PageHeader";
+import ReservaitionDetails from "@/components/Templates/Reservaition/ReservaitionDetails";
 
 export default function Reservaition() {
   return (
-    <h1>Reservaition</h1>
-  )
+    <>
+      <PageHeader route={"reservaition"} />
+      <ReservaitionDetails/> 
+    </>
+  );
 }
