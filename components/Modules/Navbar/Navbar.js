@@ -58,12 +58,12 @@ export default function Navbar() {
                 >
                   Reservation
                 </Link>
-                <a
-                  href="testimonial.html"
+                <Link
+                  href="/testimonial"
                   className={`${styles.dropdown_item}`}
                 >
                   Testimonial
-                </a>
+                </Link>
               </div>
             </div>
             <a href="contact.html" className={`${styles.nav_link}`}>

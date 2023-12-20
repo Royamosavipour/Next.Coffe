@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 export default function PageHeader({ route }) {
-  console.log(route);
+
   return (
     <div class="container-fluid page-header mb-5 position-relative overlay-bottom">
       <div
