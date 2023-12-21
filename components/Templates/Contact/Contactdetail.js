@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function detail() {
-  return (
+
+const [username,setUsername]=useState('')
+const [email,setEmail]=useState('')
+const [subject,setSubject]=useState('')
+const [body,setBody]=useState('')
+
+  
+  
+  
+  
+  const addMessage=()=>{
+
+
+
+  }
+
+  return ( 
     <div class="container-fluid pt-5">
       <div class="container">
         <div class="section-title">
