@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import PageHeader from "@/components/Modules/PageHeader/PageHeader";
 
 export default function Contact() {
   return (
-    <div>Contact</div>
-  )
+    <>
+      <PageHeader route={"contact"} />
+    </>
+  );
 }
