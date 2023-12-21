@@ -1,23 +1,32 @@
 import React, { useState } from "react";
+import swal from "sweetalert";
 
 export default function detail() {
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [body, setBody] = useState("");
 
-const [username,setUsername]=useState('')
-const [email,setEmail]=useState('')
-const [subject,setSubject]=useState('')
-const [body,setBody]=useState('')
+  const addMessage = async (event) => {
+    event.preventDefault();
 
-  
-  
-  
-  
-  const addMessage=()=>{
+    const messsage = { username, email, subject, body };
+    const res = await fetch(`http://localhost:4000/messages`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(messsage),
+    });
+    if (res.status === 201) {
+      swal({
+        title: "your message regester",
+        icon: "success",
+        buttons: "Ok",
+      });
+    }
+    // const data = await res.json();
+  };
 
-
-
-  }
-
-  return ( 
+  return (
     <div class="container-fluid pt-5">
       <div class="container">
         <div class="section-title">
@@ -129,5 +138,5 @@ const [body,setBody]=useState('')
         </div>
       </div>
     </div>
-  )
+  );
 }
