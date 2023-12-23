@@ -95,7 +95,7 @@ export default function Navbar() {
               <div
                 className={`${styles.dropdown_menu} ${styles.text_capitalize}`}
               >
-                <Link href="/reservation" className={`${styles.dropdown_item}`}>
+                <Link href="/reservaition" className={`${styles.dropdown_item}`}>
                   Reservation
                 </Link>
                 <Link href="/testimonial" className={`${styles.dropdown_item}`}>
