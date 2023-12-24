@@ -19,11 +19,16 @@ const ProductsDetails = ({ data }) => {
         <h4 className="text-white mb-3">{data.title}</h4>
         <hr style={{ borderColor: "white" }} />
         <div className={styles.stars}>
+          {Array(Math.trunc(data.score)).fill(0).map(() => (
           <FontAwesomeIcon className={styles.fill_star} icon={faStar} />
-          <FontAwesomeIcon className={styles.fill_star} icon={faStar} />
-          <FontAwesomeIcon className={styles.fill_star} icon={faStar} />
-          <FontAwesomeIcon className={styles.fill_star} icon={faStar} />
-          <FontAwesomeIcon icon={faStar} />
+          ))
+          }
+
+          {Array(5 - Math.trunc(data.score)).fill(0).map(() => (
+            <FontAwesomeIcon icon={faStar} />
+          ))
+          }
+        
         </div>
         <div className={styles.price_details}>
           {data.off ? (
