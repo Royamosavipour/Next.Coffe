@@ -4,15 +4,6 @@ export default function Result({data}) {
   return (
     <div class="container-fluid pt-5">
     <div class="container">
-      <div class="section-title">
-        <h4
-          class="text-primary text-uppercase"
-          style={{ letterSpacing: "5px" }}
-        >
-          Menu &amp; Pricing
-        </h4>
-        <h1 class="display-4">Competitive Pricing</h1>
-      </div>
       <div class="row">
         <div class="col-lg-6">
           <h1 class="mb-5">Hot Coffee</h1>
@@ -38,4 +29,13 @@ export default function Result({data}) {
     </div>
   </div>
   )
+}
+
+
+export async function getServerSideProps(context) {
+  
+  
+
+
+  return{props:{}}
 }
