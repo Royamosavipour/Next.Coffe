@@ -20,8 +20,8 @@ const Comments = ({ data }) => {
           <h1 className="display-4">Product Comments</h1>
         </div>
 
-        <div className="row">
-          <Swiper
+        <div className="row" style={{justifyContent:"center"}}>
+          {data.length?(<Swiper
             loop={true}
             slidesPerView={1}
             spaceBetween={10}
@@ -37,8 +37,8 @@ const Comments = ({ data }) => {
             modules={[Pagination]}
             className={styles.Swiper}
           >
-            {data.map((comment) => (
-              <SwiperSlide className={styles.swiper_slide}>
+            {data.slice(0,3).map((comment) => (
+              <SwiperSlide className={styles.swiper_slide} key={comment.id}>
                 <div className="testimonial-item">
                   <div className="d-flex align-items-center mb-3">
                     <img
@@ -56,7 +56,8 @@ const Comments = ({ data }) => {
                 </div>
               </SwiperSlide>
             ))}
-          </Swiper>
+          </Swiper>):(<h1> Not Comment</h1> )}
+          
         </div>
       </div>
     </div>
