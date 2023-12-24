@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default function Card({ img, price, title, desc,id }) {
+export default function Card({ img, price, title, desc, id }) {
   return (
     <div className="row align-items-center mb-5">
       <div className="col-4 col-sm-3">
@@ -9,8 +9,9 @@ export default function Card({ img, price, title, desc,id }) {
         <h5 className="menu-price">${price}</h5>
       </div>
       <div className="col-8 col-sm-9">
-        <h4>{title}</h4>
-        <Link href={`/product/${id}`}></Link>
+        <Link href={`/product/${id}`}>
+          <h4>{title}</h4>
+        </Link>
         <p className="m-0">{desc}</p>
       </div>
     </div>
