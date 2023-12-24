@@ -23,7 +23,6 @@ const ProductsDetails = ({ data }) => {
           <FontAwesomeIcon className={styles.fill_star} icon={faStar} />
           ))
           }
-
           {Array(5 - Math.trunc(data.score)).fill(0).map(() => (
             <FontAwesomeIcon icon={faStar} />
           ))
